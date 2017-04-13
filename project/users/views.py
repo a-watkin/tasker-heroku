@@ -53,26 +53,26 @@ def logout():
     return redirect(url_for('users.login'))
 
 
-@users_blueprint.route('/', methods=['GET', 'POST'])
-def login():
-    error = None
-    form = LoginForm(request.form)
-    if request.method == 'POST':
-        if form.validate_on_submit():
-            user = User.query.filter_by(name=request.form['name']).first()
+# @users_blueprint.route('/', methods=['GET', 'POST'])
+# def login():
+#     error = None
+#     form = LoginForm(request.form)
+#     if request.method == 'POST':
+#         if form.validate_on_submit():
+#             user = User.query.filter_by(name=request.form['name']).first()
 
-            if user is not None and bcrypt.check_password_hash(
-                user.password, request.form['password']):
+#             if user is not None and bcrypt.check_password_hash(
+#                 user.password, request.form['password']):
 
-                session['logged_in'] = True
-                session['user_id'] = user.id
-                session['name'] = user.name
-                session['role'] = user.role
-                flash('Welcome!')
-                return redirect(url_for('tasks.tasks'))
-            else:
-                error = 'Invalid username or password.'
-    return render_template('login.html', form=form, error=error)
+#                 session['logged_in'] = True
+#                 session['user_id'] = user.id
+#                 session['name'] = user.name
+#                 session['role'] = user.role
+#                 flash('Welcome!')
+#                 return redirect(url_for('tasks.tasks'))
+#             else:
+#                 error = 'Invalid username or password.'
+#     return render_template('login.html', form=form, error=error)
 
 
 @users_blueprint.route('/register/', methods=['GET', 'POST'])
