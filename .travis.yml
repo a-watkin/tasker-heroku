@@ -1,7 +1,7 @@
 language:
 - python
 python:
-- '3.5.2'
+- 3.5.2
 - '2.7'
 install:
 - pip install -r requirements.txt
@@ -10,7 +10,9 @@ script:
 deploy:
   provider: heroku
   api_key:
-    secure: Y1JjEuKysCIG366mBnhMvb8HAE8t8enkqCjhQW4E3X2CMnujzoC/ivnVDNn4OxLR6y9euhQbORgy8MmD5BNkYKP/LaCSJAcIHyUezeUl17tb2N1vfKnfTzQdSYv443lDbr1B+rTvR0G3RVwfi/PfzHbX1y58cxE6SF+H5f6c6L+K5TdJgEs9Ut2WKEHTH8Eh4DzIpMbkdI8U9jtQJphxFEPzBuv1p7/RkfG07J+pxrkaCZ80sQGKenDeUfHuI03Nkbk3FcGC0OVBVvhzMgiLjPpsMeKF97CIFuKZOfH11FXyx9vqTpkfSVkc5E6Fs/OpZ20dU9r5LkEHhtBWTONuHYw1hmh0NeWi3PXcEmIcKdpaJmDI+RfY5Qk4CsVwVRq+5dr7MHyl9N9DiVKor0FwCh8LBsyOPjFPpiSPTE7C9HBt4DBVR8Oc5aLPYYWg30vztfMZynnz7iA5ArU+UZnZ8G13VqtYQ3/wBqmxvrWwEGk3wsatYiW90Ss+drayyErDua1EuyjFyyG7N+mKmme8bHZHSx/RaHhNZpgQ30ORhQwCAbPNCQDZslIssIG7owhYy5k4ZUG68civL43eLdMNPohbvK6jkd4kUDT231ioYUNpxiC4//WKUYk9sHyxEUKhXdB+YuHM3YaXBXsDhR+VDpeNOZmp5ZY0gsbvbAORLGs=
+    secure: L1y1MKIzGrRQvOWahTFxBQXjMql28E1nS+cx3ij7airOMmvRGKvCozfhCPfvtDv/HCyPmoXdImiXnAJD0GXJatch90d8xkTeV9wsSt3XxewNC1UluVCbu+62yWSJcHj4WlW27Si82U3uqSHbauEPkHi7c4u2Fjli3+vi1O9Oo3ZrZtJQOT3LeccExFWcByclgQDTiB6prwd6ZlGcwxL6y1hQx6/C+DM7gThYT0Ss2VC2uREPn/iffGfqPvkiRXO1NJSiAa7wO8r55Xvg+9UpjPzU2HC0wMBFWhJNrioATpiUEbNeNW62jemEB7OnbMMJxkH8zreBJrH3OlfNluj56cVagca6j3PQO0QT46b/O/YvzUL7ct0bLL9Y3nnjow4K0xU9l4yt5s9efbideiDFOMgiVn9LoOpGDbNnnoDj2CdAv0E3Prx2mtPIJ5Rv92kNYU8NsexnuZOZf/U6rSajpNfHwyYBiBWahUBo2Mtd5kJZDu6Ba+ou+lF5TsTGdX8lLM7afqZf8BolMx5N4VOiFBYD1vWsfy9Ao9VuRZNfEOZIYx1RWgKS04KLVD952TVJkUrE2aCZVmCIeTcYxH9CNBifiMS8PEa/cT1MK/zJruM6uw2aK7u3tDy8lHCXZgBg6F9E8Xt1NVKCrvfzmywxDbtVF67Ugb3YVjgdH1AvnCc=
   app: tasker-heroku
   on:
+    branch: master
+    python: '3.5.2'
     repo: a-watkin/tasker-heroku
