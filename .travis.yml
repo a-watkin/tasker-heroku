@@ -11,7 +11,8 @@ deploy:
   provider: heroku
   api_key:
     secure: L1y1MKIzGrRQvOWahTFxBQXjMql28E1nS+cx3ij7airOMmvRGKvCozfhCPfvtDv/HCyPmoXdImiXnAJD0GXJatch90d8xkTeV9wsSt3XxewNC1UluVCbu+62yWSJcHj4WlW27Si82U3uqSHbauEPkHi7c4u2Fjli3+vi1O9Oo3ZrZtJQOT3LeccExFWcByclgQDTiB6prwd6ZlGcwxL6y1hQx6/C+DM7gThYT0Ss2VC2uREPn/iffGfqPvkiRXO1NJSiAa7wO8r55Xvg+9UpjPzU2HC0wMBFWhJNrioATpiUEbNeNW62jemEB7OnbMMJxkH8zreBJrH3OlfNluj56cVagca6j3PQO0QT46b/O/YvzUL7ct0bLL9Y3nnjow4K0xU9l4yt5s9efbideiDFOMgiVn9LoOpGDbNnnoDj2CdAv0E3Prx2mtPIJ5Rv92kNYU8NsexnuZOZf/U6rSajpNfHwyYBiBWahUBo2Mtd5kJZDu6Ba+ou+lF5TsTGdX8lLM7afqZf8BolMx5N4VOiFBYD1vWsfy9Ao9VuRZNfEOZIYx1RWgKS04KLVD952TVJkUrE2aCZVmCIeTcYxH9CNBifiMS8PEa/cT1MK/zJruM6uw2aK7u3tDy8lHCXZgBg6F9E8Xt1NVKCrvfzmywxDbtVF67Ugb3YVjgdH1AvnCc=
-  app: tasker-heroku
+  # name of app on heroku
+  app: sparklefingers
   on:
     branch: master
     python: '3.5.2'
